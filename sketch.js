@@ -109,6 +109,7 @@ function keyReleased() {
 }
 
 function showArrows(index, arrows) {
+
   arrows[index].display();
 
   if (
@@ -116,7 +117,7 @@ function showArrows(index, arrows) {
     arrows[index].body.position.y > height
     ){
       if (!arrows[index].isRemoved){
-        arrows[index].remove(index,arrows);
+        arrows.remove();
 
       }else{
         arrows[index].trajectory = []

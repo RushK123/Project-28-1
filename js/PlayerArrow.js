@@ -62,7 +62,7 @@ class PlayerArrow {
     }
   }
 
-  rremove(index){
+  remove(index){
     Matter.Body.setVelocity(this.body, { x: 0, y: 0 });
     this.speed = 0.05;
     this.isSink = true;
