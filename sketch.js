@@ -117,7 +117,7 @@ function showArrows(index, arrows) {
     arrows[index].body.position.y > height
     ){
       if (!arrows[index].isRemoved){
-        arrows.remove();
+        arrows.remove(index);
 
       }else{
         arrows[index].trajectory = []
